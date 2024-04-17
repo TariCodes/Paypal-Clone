@@ -48,12 +48,12 @@ input,
   border: none;
 }
 main {
-  padding: 60px;
+  padding: 60px 0;
 }
 main .container {
   max-width: 375px;
   margin: 0 auto;
-  padding-inline: 10px;
+  padding: 0 9px;
   text-align: center;
 }
 main .brand-logo {
