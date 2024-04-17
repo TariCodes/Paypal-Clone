@@ -95,7 +95,6 @@ main {
 main .container {
   max-width: 375px;
   margin: 0 auto;
-  padding-inline:20px;
   text-align: center;
 }
 main .brand-logo {
