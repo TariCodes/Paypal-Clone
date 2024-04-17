@@ -90,11 +90,12 @@ input,
   border: none;
 }
 main {
-  padding: 60px 0;
+  padding: 60px;
 }
 main .container {
   max-width: 375px;
   margin: 0 auto;
+  padding-inline: 20px;
   text-align: center;
 }
 main .brand-logo {
@@ -117,7 +118,7 @@ form .item::before {
   background-color: hsl(0, 0%, 77%);
   left: 0;
   height: 1px;
-  width: 165px;
+  width: 160px;
 }
 form .item::after {
   content: "";
@@ -125,7 +126,7 @@ form .item::after {
   background-color: hsl(0, 0%, 77%);
   right: 0;
   height: 1px;
-  width: 165px;
+  width: 160px;
 }
 form .form-input:first-child {
   margin-bottom: 18px;
