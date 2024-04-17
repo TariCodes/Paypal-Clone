@@ -1,0 +1,95 @@
+main {
+    padding: 60px 0;
+
+    .container {
+        max-width: 375px;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .brand-logo {
+        width: 75px;
+        margin-right: auto;
+        margin-left: auto;
+        margin-bottom: 30px;
+    }
+}
+
+
+
+form {
+    position: relative;
+
+    .item {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        &::before {
+            content: "";
+            position: absolute;
+            background-color: @clr-gray;
+            left: 0;
+            height: 1px;
+            width: 165px;
+        }
+
+        &::after {
+            content: "";
+            position: absolute;
+            background-color: @clr-gray;
+            right: 0;
+            height: 1px;
+            width: 165px;
+        }
+    }
+
+
+
+    .form-input:first-child {
+        margin-bottom: 18px;
+    }
+
+    input {
+        width: 100%;
+        padding: 1.2rem 0.39rem;
+        font-weight: @fw-400;
+        font-size: 1.2rem;
+        letter-spacing: .35px;
+        border: 1px solid @clr-black;
+        border-radius: 5px;
+
+        &:focus-within {
+            border: 2px solid lighten(@clr-primary, 40%);
+            outline: solid 6px lighten(@clr-primary, 55%);
+        }
+    }
+
+
+
+    .f-pass {
+        color: lighten(@clr-primary, 20%);
+        font-weight: @fw-600;
+        text-align: left;
+        font-size: calc(@fs-primary + 1px);
+        margin: 1.15rem 0;
+    }
+
+    .btn--primary {
+        background-color: @clr-primary;
+        color: @clr-white;
+        transition: 500ms background ease;
+        margin-bottom: calc(@fs-primary + 10px);
+
+        &:hover {
+            background-color: darken(@btn-hover, 10%);
+            transform: scale(0.9);
+        }
+    }
+
+    .btn--outline {
+        background-color: @clr-white;
+        border: 1px solid @clr-black;
+        margin-top: calc(@fs-primary + 10px);
+    }
+}

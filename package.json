@@ -1,0 +1,16 @@
+{
+  "name": "paypal-clone",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "build-css": "lessc src/style.less dist/style.css",
+    "watch-css": "less-watch-compiler src dist"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "less": "^4.2.0"
+  }
+}

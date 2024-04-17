@@ -1,0 +1,188 @@
+@font-face {
+  font-family: 'Poppins';
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/poppins/v21/pxiGyp8kv8JHgFVrJJLedw.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Poppins';
+  font-style: italic;
+  font-weight: 500;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/poppins/v21/pxiDyp8kv8JHgFVrJJLmg1hlEA.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Poppins';
+  font-style: italic;
+  font-weight: 600;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/poppins/v21/pxiDyp8kv8JHgFVrJJLmr19lEA.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/poppins/v21/pxiEyp8kv8JHgFVrFJA.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/poppins/v21/pxiByp8kv8JHgFVrLGT9V1s.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/poppins/v21/pxiByp8kv8JHgFVrLEj6V1s.ttf) format('truetype');
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+  font-size: 15px;
+}
+body {
+  min-height: 100vh;
+  font-weight: 400;
+  font-family: "Poppins", sans-serif;
+  position: relative;
+}
+input,
+img,
+a,
+label,
+button,
+.btn {
+  display: block;
+}
+img {
+  max-width: 100%;
+}
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+a {
+  font-size: 1rem;
+  text-decoration: none;
+}
+.btn {
+  width: 100%;
+  padding: 0.75rem;
+  border-radius: 1.5rem;
+  font-size: calc(15px + 0.15rem);
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+}
+input,
+.btn {
+  outline: none;
+  border: none;
+}
+main {
+  padding: 60px 0;
+}
+main .container {
+  max-width: 375px;
+  margin: 0 auto;
+  text-align: center;
+}
+main .brand-logo {
+  width: 75px;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 30px;
+}
+form {
+  position: relative;
+}
+form .item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+form .item::before {
+  content: "";
+  position: absolute;
+  background-color: hsl(0, 0%, 77%);
+  left: 0;
+  height: 1px;
+  width: 165px;
+}
+form .item::after {
+  content: "";
+  position: absolute;
+  background-color: hsl(0, 0%, 77%);
+  right: 0;
+  height: 1px;
+  width: 165px;
+}
+form .form-input:first-child {
+  margin-bottom: 18px;
+}
+form input {
+  width: 100%;
+  padding: 1.2rem 0.39rem;
+  font-weight: 400;
+  font-size: 1.2rem;
+  letter-spacing: 0.35px;
+  border: 1px solid hsl(0, 8%, 12%);
+  border-radius: 5px;
+}
+form input:focus-within {
+  border: 2px solid hsl(240, 90%, 77%);
+  outline: solid 6px hsl(240, 90%, 92%);
+}
+form .f-pass {
+  color: hsl(240, 90%, 57%);
+  font-weight: 600;
+  text-align: left;
+  font-size: calc(15px + 1px);
+  margin: 1.15rem 0;
+}
+form .btn--primary {
+  background-color: hsl(240, 90%, 37%);
+  color: hsl(0, 0%, 99%);
+  transition: 500ms background ease;
+  margin-bottom: calc(15px + 10px);
+}
+form .btn--primary:hover {
+  background-color: hsl(240, 92%, 23%);
+  transform: scale(0.9);
+}
+form .btn--outline {
+  background-color: hsl(0, 0%, 99%);
+  border: 1px solid hsl(0, 8%, 12%);
+  margin-top: calc(15px + 10px);
+}
+footer {
+  background-color: hsl(0, 0%, 91%);
+  padding: 1.5rem;
+  position: absolute;
+  width: 100%;
+  bottom: 0%;
+  left: 0%;
+}
+footer .container {
+  display: flex;
+  justify-content: center;
+}
+footer .sitemap {
+  display: flex;
+  gap: 8px;
+}
+footer .link a {
+  font-size: 11px;
+  color: hsl(0, 8%, 19%);
+  font-weight: 600;
+}
